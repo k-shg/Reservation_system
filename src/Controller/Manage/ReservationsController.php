@@ -52,7 +52,6 @@ class ReservationsController extends AppController {
             }
             $this->Flash->error(__('Unable to add your reservation.'));
         }
-
         $users = $this->Reservations->Users->find('list')->toArray();
         $this->set('reservation', $reservation);
         $this->set(compact('users'));
