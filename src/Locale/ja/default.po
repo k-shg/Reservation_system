@@ -1,0 +1,224 @@
+msgid "My name is {0}"
+msgstr "Je m'appelle {0}"
+
+msgid "Add Reservation"
+msgstr "予約追加"
+
+msgid "User"
+msgstr "ユーザー"
+
+msgid "Start Time"
+msgstr "開始時間"
+
+msgid "End Time"
+msgstr "終了時間"
+
+msgid "Body"
+msgstr "内容"
+
+msgid "Add"
+msgstr "追加"
+
+msgid "Edit Reservation"
+msgstr "予約編集"
+
+msgid "Edit"
+msgstr "編集"
+
+msgid "View"
+msgstr "詳細"
+
+msgid "Delete"
+msgstr "削除"
+
+msgid "Search Reservation"
+msgstr "予約検索"
+
+msgid "Id"
+msgstr "ID"
+
+msgid "Created"
+msgstr "作成日時"
+
+msgid "Add User"
+msgstr "ユーザー追加"
+
+msgid "Name"
+msgstr "名前"
+
+msgid "Role"
+msgstr "権限"
+
+msgid "Email"
+msgstr "E-mail"
+
+msgid "Password"
+msgstr "パスワード"
+
+msgid "State"
+msgstr "状態"
+
+msgid "Manager"
+msgstr "管理者"
+
+msgid "Normal"
+msgstr "一般ユーザー"
+
+msgid "Stopped"
+msgstr "凍結中"
+
+msgid "Opened"
+msgstr "開放中"
+
+msgid "next"
+msgstr "次へ"
+
+msgid "previous"
+msgstr "前へ"
+
+msgid "Users"
+msgstr "ユーザー一覧"
+
+msgid "Login"
+msgstr "ログイン"
+
+msgid "Modified"
+msgstr "更新日時"
+
+msgid "Logout"
+msgstr "ログアウト"
+
+msgid "Reserver"
+msgstr "予約者"
+
+msgid "Reservation Number"
+msgstr "予約番号"
+
+msgid "Operation"
+msgstr "操作"
+
+msgid "User Id"
+msgstr "会員番号"
+
+msgid "Your reservation has been saved."
+msgstr "予約は保存されました"
+
+msgid "Unable to add your reservation."
+msgstr "予約を追加できませんでした"
+
+msgid "Your Reservation has been updated."
+msgstr "予約を更新しました"
+
+msgid "Unable to update your Reservation."
+msgstr "予約を更新できませんでした"
+
+msgid "The {0} reservation has been deleted."
+msgstr "予約番号{0}は削除されました"
+
+msgid "The user has been saved."
+msgstr "ユーザーを保存しました"
+
+msgid "The user could not be saved. Please, try again."
+msgstr "ユーザーを保存できませんでした。やり直してください"
+
+msgid "Stop"
+msgstr "凍結"
+
+msgid "open"
+msgstr "開放"
+
+msgid "The user has been deleted."
+msgstr "ユーザーを削除しました"
+
+msgid "The user could not be deleted. Please, try again."
+msgstr "ユーザーを削除できませんでした。やり直してください"
+
+msgid "This account has been frozen"
+msgstr "このアカウントは凍結されています"
+
+msgid "User name or password is invalid"
+msgstr "ユーザー名かパスワードが不正です"
+
+msgid "Your logout is executed"
+msgstr "ログアウトしました"
+
+msgid "Your login is executed"
+msgstr "ログインしました"
+
+msgid "4-8 length"
+msgstr "4~8文字で入力してください"
+
+msgid "AlphaNumeric or blank"
+msgstr "英数字または空欄のみ入力してください"
+
+msgid "Reservation site"
+msgstr "予約サイト"
+
+msgid "Account data"
+msgstr "アカウント情報"
+
+msgid "Reservation list"
+msgstr "予約一覧"
+
+msgid "User management"
+msgstr "ユーザー管理"
+
+msgid "New user registration"
+msgstr "新規ユーザー登録"
+
+msgid "Are you ok?"
+msgstr "よろしいですか？"
+
+msgid "Are you sure you want to delete # {0}?"
+msgstr "ID{0}のユーザーを削除してよろしいですか？"
+
+msgid "Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total"
+msgstr "全{{pages}}ページ中{{page}}ページ目です。合計{{count}}レコードのうち、{{current}}レコードを表示中です"
+
+msgid "Now, no reservation"
+msgstr "現在、予約はありません"
+
+msgid "User name"
+msgstr "ユーザー名"
+
+msgid "Mail Address"
+msgstr "メールアドレス"
+
+msgid "Mr"
+msgstr "様"
+
+msgid "Reservation data"
+msgstr "予約詳細"
+
+msgid "You are not authorized to access that location."
+msgstr "アクセス権限がありません"
+
+msgid "Edit User"
+msgstr "ユーザー編集"
+
+msgid "User Number"
+msgstr "ユーザー番号"
+
+msgid "there is no date"
+msgstr "存在しない日付です"
+
+msgid "End time is after start time"
+msgstr "終了時間は開始時間よりも後の時間を入力してください"
+
+msgid "Aggregates"
+msgstr "集計"
+
+msgid "Search"
+msgstr "検索"
+
+msgid "Aggregates2"
+msgstr "集計2"
+
+msgid "Priority"
+msgstr "優先度"
+
+msgid "Save Priority"
+msgstr "優先度保存"
+
+msgid ""
+msgstr ""
