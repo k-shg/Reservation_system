@@ -55,6 +55,11 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 
 		<div class="collapse navbar-collapse" id="navbarEexample">
 			<ul class="nav navbar-nav">
+                <li><?= $this->Html->link(__('Account data'), ['controller' => 'users', 'action' => 'gestData']) ?></li>
+                <li><?= $this->Html->link(__('Reservation list'), ['controller' => 'reservations', 'action' => 'index']) ?></li>
+                <li><?= $this->Html->link(__('Users'), ['controller' => 'users', 'action' => 'index']) ?></li>
+                <li><?= $this->Html->link(__('Aggregates'), ['controller' => 'Aggregates', 'action' => 'statisticReservations']) ?></li>
+                <li><?= $this->Html->link(__('Aggregates2'), ['controller' => 'Aggregates', 'action' => 'statisticLength']) ?></li>
                 <?php
                 if($this->Session->read('Auth.User.role') === User::ADMIN) {
                 ?>
@@ -85,8 +90,16 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
                                 <?= $this->Session->read('Auth.User.email') ?>
                             </p>
                         <?php echo $this->Html->link(__('Logout'), ['controller' => 'Users', 'action' => 'logout'], ['class' => 'btn btn-default navbar-btn']);
-                    }else {
-                        echo $this->Html->link(__('New user registration'), ['controller' => 'users', 'action' => 'add'], ['class' => 'btn btn-default navbar-btn']);
+                    }else {?>
+                        <p class="navbar-text" style="font-size: 14px;">
+                            <?=__('User name')?>:
+                            ゲストユーザー
+                        </p>
+                        <p class="navbar-text" style="font-size: 14px;">
+                            <?=__('Mail Address')?>:
+                            no Address
+                        </p>
+                    <?php    echo $this->Html->link(__('New user registration'), ['controller' => 'users', 'action' => 'add'], ['class' => 'btn btn-default navbar-btn']);
                     }
                 ?>
             </div>
