@@ -47,22 +47,22 @@ class AppController extends Controller
         ]);
         $this->loadComponent('Flash');
 
-        $this->loadComponent('Auth', [
-            'authenticate' => [
-                'Form' => [
-                    'fields' => [
-                        'username' => 'email',
-                        'password' => 'password'
-                    ]
-                ]
-            ],
-            'loginAction' => [
-                'controller' => 'Users',
-                'action' => 'login'
-            ],
-            'authorize' => ['Controller'],
-            'unauthorizedRedirect' => ['controller' => 'Reservations', 'action' => 'index']
-        ]);
+        // $this->loadComponent('Auth', [
+        //     'authenticate' => [
+        //         'Form' => [
+        //             'fields' => [
+        //                 'username' => 'email',
+        //                 'password' => 'password'
+        //             ]
+        //         ]
+        //     ],
+        //     'loginAction' => [
+        //         'controller' => 'Users',
+        //         'action' => 'login'
+        //     ],
+        //     'authorize' => ['Controller'],
+        //     'unauthorizedRedirect' => ['controller' => 'Reservations', 'action' => 'index']
+        // ]);
 
         /*
          * Enable the following component for recommended CakePHP security settings.
@@ -70,13 +70,13 @@ class AppController extends Controller
          */
         //$this->loadComponent('Security');
     }
-    public function isAuthorized($user = null) {
-       //管理者だけが管理機能にアクセス可能です。
-       if ($this->request->getParam('prefix') === 'manage') {
-           return (bool)($user['role'] === User::ADMIN);
-       }
-
-       // デフォルトは拒否
-       return false;
-   }
+   //  public function isAuthorized($user = null) {
+   //     //管理者だけが管理機能にアクセス可能です。
+   //     if ($this->request->getParam('prefix') === 'manage') {
+   //         return (bool)($user['role'] === User::ADMIN);
+   //     }
+   //
+   //     // デフォルトは拒否
+   //     return false;
+   // }
 }

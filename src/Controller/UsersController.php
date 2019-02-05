@@ -159,20 +159,20 @@ class UsersController extends AppController
         return $this->redirect($this->Auth->logout());
     }
 
-    public function isAuthorized($user = null)
-    {
-        $action = $this->request->getParam('action');
-
-        if ($user['role'] === User::NORMAL) {
-            //特定のアクションかつ、ユーザIDとパラメータが一致する場合のみ
-            if (!(
-               in_array($action, ['view', 'edit']) &&
-               $user['id'] == (int)$this->request->params['pass'][0]
-            )) {
-               return false;
-            }
-        }
-        // デフォルトは拒否
-        return parent::isAuthorized($user);
+    // public function isAuthorized($user = null)
+    // {
+    //     $action = $this->request->getParam('action');
+    //
+    //     if ($user['role'] === User::NORMAL) {
+    //         //特定のアクションかつ、ユーザIDとパラメータが一致する場合のみ
+    //         if (!(
+    //            in_array($action, ['view', 'edit']) &&
+    //            $user['id'] == (int)$this->request->params['pass'][0]
+    //         )) {
+    //            return false;
+    //         }
+    //     }
+    //     // デフォルトは拒否
+    //     return parent::isAuthorized($user);
     }
 }

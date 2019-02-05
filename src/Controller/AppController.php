@@ -47,23 +47,23 @@ class AppController extends Controller
         ]);
         $this->loadComponent('Flash');
 
-        $this->loadComponent('Auth', [
-            'authenticate' => [
-                'Form' => [
-                    'fields' => [
-                        'username' => 'email',
-                        'password' => 'password'
-                    ]
-                ]
-            ],
-            'loginAction' => [
-                'controller' => 'Users',
-                'action' => 'login'
-            ],
-            'authorize' => ['Controller'],
-            'unauthorizedRedirect' => ['controller' => 'Reservations', 'action' => 'index']
-        ]);
-        $this->Auth->config('authError', __('You are not authorized to access that location.'));
+        // $this->loadComponent('Auth', [
+        //     'authenticate' => [
+        //         'Form' => [
+        //             'fields' => [
+        //                 'username' => 'email',
+        //                 'password' => 'password'
+        //             ]
+        //         ]
+        //     ],
+        //     'loginAction' => [
+        //         'controller' => 'Users',
+        //         'action' => 'login'
+        //     ],
+        //     'authorize' => ['Controller'],
+        //     'unauthorizedRedirect' => ['controller' => 'Reservations', 'action' => 'index']
+        // ]);
+        // $this->Auth->config('authError', __('You are not authorized to access that location.'));
 
         /*
          * Enable the following component for recommended CakePHP security settings.
@@ -72,13 +72,13 @@ class AppController extends Controller
         //$this->loadComponent('Security');
     }
 
-    public function isAuthorized($user = null)
-    {
-       // admin と一般ユーザーだけがアクセス可能
-       if ($user['role'] === User::ADMIN || $user['role'] ===User::NORMAL) {
-           return true;
-       }
-       // デフォルトは拒否
-       return false;
-   }
+   //  public function isAuthorized($user = null)
+   //  {
+   //     // admin と一般ユーザーだけがアクセス可能
+   //     if ($user['role'] === User::ADMIN || $user['role'] ===User::NORMAL) {
+   //         return true;
+   //     }
+   //     // デフォルトは拒否
+   //     return true;
+   // }
 }

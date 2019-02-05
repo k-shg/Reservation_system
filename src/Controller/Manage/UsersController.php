@@ -12,11 +12,11 @@ use App\Model\Entity\User;
  */
 class UsersController extends AppController
 {
-    public function initialize()
-    {
-        parent::initialize();
-        $this->Auth->allow(['logout', 'add']);
-    }
+    // public function initialize()
+    // {
+    //     parent::initialize();
+    //     $this->Auth->allow(['logout', 'add']);
+    // }
 
     /**
      * Index method
@@ -163,5 +163,9 @@ class UsersController extends AppController
     {
         $this->Flash->success(__("Your logout is executed"));
         return $this->redirect($this->Auth->logout());
+    }
+
+    public function gestData() {
+        
     }
 }
