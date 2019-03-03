@@ -24,3 +24,7 @@ tr.table-color > td {
 .table>thead>tr>th[colspan="28"] {
     text-align: center;
 }
+
+div.content.specification{
+    margin: 40px;
+}

@@ -220,5 +220,5 @@ msgstr "優先度"
 msgid "Save Priority"
 msgstr "優先度保存"
 
-msgid ""
-msgstr ""
+msgid "About Specification"
+msgstr "サイト仕様"
