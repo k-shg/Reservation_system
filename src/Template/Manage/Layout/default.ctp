@@ -60,11 +60,8 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
                 <li><?= $this->Html->link(__('Users'), ['controller' => 'users', 'action' => 'index']) ?></li>
                 <li><?= $this->Html->link(__('Aggregates'), ['controller' => 'Aggregates', 'action' => 'statisticReservations']) ?></li>
                 <li><?= $this->Html->link(__('Aggregates2'), ['controller' => 'Aggregates', 'action' => 'statisticLength']) ?></li>
-<<<<<<< HEAD
                 <li><?= $this->Html->link(__('About Specification'), ['controller' => 'Specification', 'action' => 'index']) ?></li>
 
-=======
->>>>>>> c61821d09ee10636efd1de35e7d77e8d4a388e07
                 <?php
                 if($this->Session->read('Auth.User.role') === User::ADMIN) {
                 ?>
